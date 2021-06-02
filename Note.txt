@@ -1,0 +1,19 @@
+ *** Chú ý áp dụng cách đăng ký của heroku để áp dụng project sau này
+ 
+ npm i express express-handlebars method-override mongoose nodemon body-parser
+ + express-handlebars: giao diện
+ + method-override: thực hiện http request (get, post, put, delete)
+ + body-parser: đọc dữ liệu gửi về từ frontend
+ 
+ folder layout: folder có những cái thành phần quan trọng được dùng đi dùng lại ở nhiều trang
+ folder partials: folder chứa những thành phần nhỏ nhặt có thể được sử dụng ở nhiều trang khác nhau,
+ tuy nhiên chúng quá nhỏ để trở thành 1 page lớn như index và about.( ví dụ như header, footer, navbar, banner)
+
+ Thứ tự thực hiện:
+ model -> route -> tạo ra data để test -> tạo view để hiển thị trên giao diện
+
+ + Các bước deploy NodeJS lên heroku:
+ -chỉnh lại PORT đã định nghĩa sẵn trong app.js: const PORT = process.env.PORT || 5000;
+ -Download heroku cli tại https://devcenter.heroku.com/articles/heroku-cli#download-and-install: sử dụng câu lệnh npm install -g heroku
+ -Sử dụng terminal của vscode: thực hiện đăng nhập với heroku( tạo tài khoản trước nếu chưa có): heroku login
+ - Chạy lệnh Heroku create {name-project}

@@ -1,0 +1,3 @@
+{
+    "mongoURI": "mongodb+srv://admin:admin@nodejs.yjom5.mongodb.net/StudyNodejs?retryWrites=true&w=majority"
+}
